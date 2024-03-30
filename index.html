@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Alarm Clocks</title>
+   <link rel="icon" href="./IMG/alarm.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="CSS/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar navbar-expand-lg navbar-light">
+        <div class="navbar-logo-container d-flex align-items-center">
+         <img
+            class="navbar-logo-image mr-3"
+            src="./IMG/alarm.svg"
+            alt="logo"
+            width="30"
+            height="30"
+          />
+
+          <a class="navbar-brand text-white" href="index.html">Alarm Clocks</a>
+        </div>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item navbar-nav-active">
+              <a class="nav-link text-white" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="pages/profile.html"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="pages/sign-up.html"
+                >Sign In</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="pages/login.html">Log In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-lg-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-text">
+                        This is an Alarm Clock Base, where you can create alarm clocks.
+                      </p>
+                      <p class="card-text">
+                        Add, edit, delete alarm clocks and set them for time that you want!
+                        <br />
+                        <br />
+                        You can <a href="#">sign in</a> or <a href="#">log in</a> to get
+                        started!
+                      </p>
+                </div>
+    
+                  
+            <div class="col-lg-4">
+                <div class="card my-3">
+                    <div class="card-body text-center">
+                      <p class="card-text">
+                         Create an alarm clock now!
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-block"
+                        data-toggle="modal"
+                        data-target="#createPostModal"
+                      >
+                        Create Alarm Clock
+                      </button>
+                    </div>
+                  </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="createPostModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="createPostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="clock">
+                <h1>
+                    Set Alarm Clock
+                </h1>
+                <div class="time" id="time">
+                    00:00:00
+                </div>
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="alarmDate">
+                            Select Date:
+                        </label>
+                        <input type="date"
+                               id="alarmDate"
+                               class="alarm-input"
+                               min="">
+                    </div>
+                    <div class="input-field">
+                        <label for="alarmTime">
+                            Select Time:
+                        </label>
+                        <input type="time" id="alarmTime"
+                            class="alarm-input">
+                    </div>
+                </div>
+                <div class="alarms" id="alarms">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-success">
+                  Set Alarm
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
