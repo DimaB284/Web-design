@@ -1,0 +1,34 @@
+:root {
+  --background-color-body: #f8f9fa;
+  --background-color-header: #0940e6;
+  --background-color-footer: #1302c7;
+  --color-hover: #1f18d8;
+  --tags-hover: #e6e6e6;
+}
+
+body {
+  background-color: var(--background-color-body);
+  font-family: "Intro", sans-serif;
+}
+
+.header {
+  background-color: var(--background-color-header);
+}
+.footer {
+  background-color: var(--background-color-footer);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav-active {
+  color: #fff;
+  background-color: var(--color-hover);
+}
+
+.hoverable:hover {
+  background-color: var(--tags-hover);
+  cursor: pointer;
+}
