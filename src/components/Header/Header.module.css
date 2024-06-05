@@ -1,0 +1,49 @@
+/* Header.module.css */
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  width: 200vh;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.navbarNav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.navbarNav a {
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.navbarNav a:hover {
+  text-decoration: underline;
+}
+
+.container_fluid{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 200vh;
+  margin-left: 100px;
+  margin-right: 100px;
+}

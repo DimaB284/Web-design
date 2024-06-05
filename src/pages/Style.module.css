@@ -1,0 +1,38 @@
+/* Определяем стили для главного контейнера */
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Стили для кнопок в главном контейнере */
+.main_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Стили для кнопок управления */
+.manage-main__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Стили для блока типов */
+.types {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Центрируем по горизонтали */
+  gap: 10px;
+}
+
+/* Стили для главной формы */
+.MainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Центрируем по горизонтали */
+  gap: 10px;
+}

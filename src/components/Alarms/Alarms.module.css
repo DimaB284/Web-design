@@ -1,0 +1,36 @@
+.fontCard {
+  padding: 20px;
+  margin: 20px;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: black 2px solid;
+  background-color: aliceblue;
+}
+
+.card {
+  background-color: #ffeb3b; /* Желтый цвет фона (похожий на будильник) */
+  border-radius: 8px; /* Устанавливаем скругление углов */
+  width: 200px; /* Ширина карточки */
+  height: 150px; /* Высота карточки */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Выравниваем элементы по центру */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Увеличиваем величину подъема при наведении */
+}
+
+.timeContainer {
+  text-align: center; /* Выравниваем текст по центру */
+}
+
+.time {
+  font-size: 24px; /* Устанавливаем размер шрифта времени */
+  margin: 0;
+  color: #000000; /* Черный цвет текста */
+}
